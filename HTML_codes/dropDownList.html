@@ -1,0 +1,61 @@
+<!-- Problem7: Display largest heading "SkillSet" and skillset of a student with the help of progress
+     bars whose attribute value (for and id must be of file) Java with 72%, Python with 
+     95%, C with 63% and C++ with 43% -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+        <style>
+            .progress-bar{
+                width: 100%;
+                background-color: #f1f1f1;
+            }
+            
+            .progress{
+              width: 0%;
+              height: 30px;
+              line-height:30px;
+              text-align: center;
+              background-color: #4CAF50;
+              color: white;
+            }
+
+        </style>
+     </head>
+   <body>
+    <h1>SkillSet</h1>
+
+    <div>
+        <p>Java</p>
+        <div class="progress-bar">
+          <div id="java-progress" class="progress" style="width: 72%;">72%</div>
+        </div>
+      </div>
+    
+      <div>
+        <p>Python</p>
+        <div class="progress-bar">
+          <div id="python-progress" class="progress" style="width: 95%;">95%</div>
+        </div>
+      </div>
+    
+      <div>
+        <p>C</p>
+        <div class="progress-bar">
+          <div id="c-progress" class="progress" style="width: 63%;">63%</div>
+        </div>
+      </div>
+    
+      <div>
+        <p>C++</p>
+        <div class="progress-bar">
+          <div id="cpp-progress" class="progress" style="width: 43%;">43%</div>
+        </div>
+</body>
+</html>
