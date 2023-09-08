@@ -1,0 +1,23 @@
+<!-- Problem 20: Rotate a paragraph by 160 degrees in the clockwise direction. 
+    The paragraph is "This div element is rotated clockwise 160 degrees."
+     this paragraph should come after heading h1 with text 'Rotation' -->
+
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            .rotate-para{
+                transform: rotate(160deg);
+                transform-origin: top down;
+            }
+        </style>
+     </head>
+     <body>
+        <h1>Rotation</h1>
+        <p class="rotate-para">This div element is rotated clockwise 160 degrees.</p>
+     </body>
+     </html>
