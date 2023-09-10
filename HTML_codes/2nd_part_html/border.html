@@ -1,0 +1,35 @@
+<!-- /Problem23: Create a border of width 2px solid black around the text 
+    "I can be resized vertically" with a padding of 20px and give it an
+     option to resize vertically when we drag the bottom right corner also 
+     add the overflow property to auto-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 300px; 
+            border: 2px solid black;
+            padding: 20px;
+            resize: vertical; 
+            overflow: auto;
+        }
+
+        .stile{
+            margin: 0;
+           padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="resizable">
+        <p class="stile">I can be resized vertically</p>
+    </div>
+</body>
+</html>

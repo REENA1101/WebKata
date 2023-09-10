@@ -1,0 +1,46 @@
+<!-- Problem22: Create a pagination denoted with page numbers from 1 to 7. using a tag .
+    And also change the display property of the pagination to inline-block -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .pagination{
+            text-align: center;
+        }
+
+        .pagination a{
+           display: inline-block;
+           padding: 8px 12px;
+           margin: 5px;
+           border: 1px solid #ddd;
+           text-decoration: none;
+           color: #333;
+        }
+
+        .pagination a.current{
+           background-color: #333;
+           color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="pagination">
+       <a href="#">1</a>
+       <a href="#">2</a>
+       <a href="#" class="current">3</a>
+       <a href="#">4</a>
+       <a href="#">5</a>
+       <a href="#">6</a>
+       <a href="#">7</a>
+    </div>
+    
+</body>
+</html>
