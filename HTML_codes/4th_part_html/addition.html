@@ -1,1 +1,19 @@
 <!-- Problem78: Display addition of 5 and 6 with a paragraph element with id name as "addition" using JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="addition"></p>
+
+    <script>
+        const sum = 5 + 6;
+        const paragraphElement = document.getElementById('addition');
+        paragraphElement.textContent = `The addition of 5 and 6 is: ${sum}`;
+      </script>
+</body>
+</html>
