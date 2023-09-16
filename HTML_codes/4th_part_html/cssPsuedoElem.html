@@ -1,1 +1,20 @@
 <!-- Problem84:Display "Hello From Guvian" using paragraph tag and by using :after pseudo element add ! after the text -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+    
+    <style>
+        p::after{
+           content: "!"; 
+        }
+    </style>
+  </head>
+  <body>
+     <p>Hello From Guvian</p>
+  </body>
+</html>
