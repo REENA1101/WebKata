@@ -1,0 +1,33 @@
+<!-- problem20:Set the order property to 0 using inline css and change the
+     display property to flex using css selector(flex-container) -->
+
+     <!DOCTYPE html>
+     <html lang="en">
+       <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <title>Static Template</title>
+          <style>
+                 .flex-container {
+                     display: flex;
+                     background-color: dodgerblue;
+                     order: 0;
+                 }
+                 .flex-container > div {
+                     margin: 10px;
+                     padding: 20px;
+                     font-size: 30px;
+                     background-color: #f1f1f1;
+                 }
+             </style>
+     
+       </head>
+       <body>
+           <div class="flex-container">
+               <div style="order:0">1</div>  
+                <div>2</div>
+                <div>3</div>
+         </div>
+       </body>
+     </html>  

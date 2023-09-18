@@ -1,0 +1,32 @@
+<!-- Problem 21: Change the flex-direction property to row-reverse using the css selectors (.flex-container) 
+    and change the flex grow property to 1 as well as 5 in the inline css -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+     <style>
+            .flex-container {
+            display : flex;
+            background-color : dodgerblue;
+            flex-direction: row-reverse;
+            flex-grow:1;
+            }
+            .flex-container > div {
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+                background-color: #f1f1f1;
+            }
+        </style>
+  </head>
+  <body>
+   <div class="flex-container" style="flex-grow:1">
+      <div style="flex-grow: 1">1</div>
+      <div style="flex-grow: 5">2</div>
+    </div>
+  </body>
+</html>
