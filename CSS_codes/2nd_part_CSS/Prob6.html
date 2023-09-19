@@ -1,0 +1,40 @@
+<!-- Problem27:using the flex container selector change the flex wrap property to wrap and change the font-size to 50px -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+      <style>
+            .flex-container {
+                display: flex;
+                font-size: 50px;
+                flex-wrap: wrap;
+           
+            }
+            .flex-item-left {
+                flex: 50%;
+                padding: 20px;
+                background-color: #f1f1f1;
+                text-align: center;
+            }
+            .flex-item-right {
+                flex: 50%;
+                padding: 20px;
+                background-color: dodgerblue;
+                text-align: center;
+            }
+        </style>
+
+    
+  </head>
+  <body>
+   <div class="flex-container">
+            <div class="flex-item-left">1</div>
+            <div class="flex-item-right">2</div>
+        </div>
+  </body>
+</html>
