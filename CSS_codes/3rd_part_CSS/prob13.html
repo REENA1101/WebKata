@@ -1,2 +1,43 @@
 <!-- Problem55: Align grid-items at the center horizontally by using justify-content property -->
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  <style>
+   .grid-container {
+                display: grid;
+                height: 200px;
+                grid-gap: 10px;
+                padding: 10px;
+                grid-template-columns: auto auto auto;
+                justify-content: center;
+                background-color: dodgerblue;
+            }
+            .grid-container > div {
+                padding: 20px;
+                background-color: #f1f1f1;
+                text-align: center;
+                font-size: 30px;
+            }
+
+
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+</div>
+
+</body>
+</html>
