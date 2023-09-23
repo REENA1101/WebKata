@@ -1,0 +1,35 @@
+<!-- problem3: Add values in Input 1 and input 2 fields with id 'in1', 'in2' and Display the resultant in the paragraph tag with id "result" Note: Values are assigned dynamically for evaluation-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  
+  </head>
+  <body>
+    <label>Input 1</label>
+    <input id="in1" oninput="calculateSum()"/>
+    <br><br>
+    <label>Input 2</label>
+    <input id="in2" oninput="calculateSum()"/>
+    <p>The Sum of input 1 and input 2 is</p>
+    <p id="result"></p>
+
+    <script>
+        function calculateSum(){
+    //Start Your code here
+       let input1  = parseInt(document.getElementById('in1').value)||0
+       let input2 = parseInt(document.getElementById('in2').value)||0
+
+       const sum = input1+input2
+       
+       const resultPara = document.getElementById('result');
+       resultPara.textContent = sum
+}
+    </script>
+   
+  </body>
+</html>

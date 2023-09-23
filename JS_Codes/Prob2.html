@@ -1,0 +1,29 @@
+<!-- problem2: Display the length of input field value with id 'myLength' in paragraph tag with id 'sid' using JS. Note: Values are assigned dynamically during validation. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+      
+  <input id='myLength' oninput="calculateLength()" value=""/>
+  <p>Type above to know the length of what you wrote.</p>
+  <p id="sid"></p>
+
+  <script>
+    function calculateLength() {
+  const inputField = document.getElementById('myLength');
+  const inputValue = inputField.value;
+  const length = inputValue.length;
+  
+  const sidParagraph = document.getElementById('sid');
+  sidParagraph.textContent = `The length of the above input is ${length}.`;
+     }
+  </script>
+
+  </body>
+</html>
