@@ -1,2 +1,34 @@
 <!-- Problem10: Multiply given two inputs with id 'in1' and 'in2' and display the values in paragraph tag with id 'result' using Javascript.-->
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  
+  </head>
+  <body>
+    <label>Input 1</label>
+    <input id="in1" oninput="multiply()"/>
+    <br><br>
+    <label>Input 2</label>
+    <input id="in2" oninput="multiply()"/>
+    <p>The product of input 1 and input 2 is</p>
+    <p id="result"></p>
+
+    <script>
+        function multiply(){
+   
+            const inp1= parseInt(document.getElementById('in1').value) || 0
+            const inp2= parseInt(document.getElementById('in2').value) || 0
+            
+            const multi = inp1*inp2
+            
+            const para = document.getElementById('result')
+            para.textContent = multi
+         }
+    </script>
+  </body>
+</html>

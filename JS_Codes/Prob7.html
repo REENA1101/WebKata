@@ -1,2 +1,20 @@
 <!-- problem7: Display "Hello from Guvian!" in a paragraph tag, using Javascript-->
 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+
+    <script>
+        const para = document.createElement('p')
+        para.textContent = 'Hello from Guvian!'
+        document.body.appendChild(para)
+    </script>
+  </body>
+ </html>

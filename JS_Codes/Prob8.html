@@ -1,2 +1,38 @@
 <!-- Problem8:Display the value of selected option in paragraph tag with id 'selectedOption' using Javascript. Note: Values are changed dynamically for evaluation -->
 
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+      <select onchange="getSelectedOption()">
+          <option value="opt1">Option 1</option>
+          <option value="opt2">Option 2</option>
+          <option value="opt3">Option 3</option>
+          <option value="opt4">Option 4</option>
+          <option value="opt5">Option 5</option>
+          <option value="opt6">Option 6</option>
+          <option value="opt7">Option 7</option>
+      </select>
+      <p>The Selected Option is</p>
+      <p id="selectedOption"></p>
+
+      <script>
+          function getSelectedOption(){
+
+            const getSelect = document.querySelector('select')
+            const val = getSelect.value;
+            
+            const selectedOptionPara = document.getElementById('selectedOption')
+            selectedOptionPara.textContent = val
+        }
+        getSelectedOption();
+            </script>
+        </body>
+        </html>
