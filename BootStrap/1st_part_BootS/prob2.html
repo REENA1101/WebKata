@@ -1,0 +1,79 @@
+<!-- Problem 2: Display a basic bootstrap page ,with 6 equal columns of below mentioned content 
+    using the container bootstrap class 1.Column1 2. Column2 3. Column3 4.Column4 5.Column5 6.
+    Column6 and also change the background color of each column to light-blue, yellow, lavender, pink, palevoiletred,
+    snow Hint(Device breakpoint must be of lg) -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+      <style>
+          .col1{
+              background-color:lightblue;
+              padding: 20px;
+              margin: 10px;
+              border-radius: 5px;
+          }
+          
+          .col1:nth-child(2){
+               background-color:yellow;
+          }
+          
+           .col1:nth-child(3){
+               background-color:lavender;
+          }
+          
+           .col1:nth-child(4){
+               background-color:pink;
+          }
+          
+           .col1:nth-child(5){
+               background-color:palevoiletred;
+          }
+          
+           .col1:nth-child(6){
+               background-color:snow;
+          }
+      </style>
+    
+    </head>
+    <body>
+      
+    <div class="container">
+        <div class="row">
+            <div class="col1">
+                Column 1
+            </div>
+            
+             <div class="col1">
+                Column 2
+            </div>
+            
+             <div class="col1">
+                Column 3
+            </div>
+            
+             <div class="col1">
+                Column 4
+            </div>
+            
+             <div class="col1">
+                Column 5
+            </div>
+            
+             <div class="col1">
+                Column 6
+            </div>
+        </div>
+    
+    </div>
+    
+     
+    </body>
+    </html>
+    
