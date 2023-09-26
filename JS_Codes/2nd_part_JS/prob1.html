@@ -1,0 +1,32 @@
+<!-- Prob1: Check whether the given input string with id 'in1' includes 'Java'. if so, display true otherwise false in the paragraph tag with id 'result'.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  
+  </head>
+  <body>
+    <label>Input</label>
+    <input type="text" id="in1" oninput="checkString()"/>
+    <br>
+    <p>Is 'Java' is present in the above input?</p>
+    <p id="result"></p>
+
+    <script>
+        function checkString(){
+            //Start Your code here
+            
+            const check= document.getElementById("in1")
+            const checkvalue = check.value
+            const contains = checkvalue.includes('Java');
+            const resultElement = document.getElementById('result')
+            resultElement.innerText = contains
+}
+    </script>
+   
+  </body>
+</html>

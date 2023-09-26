@@ -1,0 +1,28 @@
+<!-- Prob3: Raju is 13 years old. Display in the given paragraph with id 'demo' as 'Eligible to vote' if he is eligible otherwise 'Not eligible'-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  
+  </head>
+  <body>
+  <p id="demo"></p>
+
+
+  <script>
+    const age = 13
+    const show = document.getElementById("demo")
+
+    if(age>=18){
+        show.innerText = 'Eligible to vote'
+    }else{
+        show.innerText = 'Not eligible'
+    }
+  </script>
+   
+  </body>
+</html>

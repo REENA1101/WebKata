@@ -1,0 +1,24 @@
+<!-- prob2: Join all the given array elements to form a comma seperated string ["Red","Green","White","Black"].Display the resultant in the paragraph with id "demo"-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+        const arrayEle = ["Red","Green","White","Black"]
+        const comma = arrayEle.join(',')
+
+        const final = document.getElementById('demo')
+        final.innerText = comma
+    </script>
+  </body>
+</html>
