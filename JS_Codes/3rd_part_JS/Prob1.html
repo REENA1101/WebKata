@@ -1,0 +1,30 @@
+<!-- Prob1: Change the background colour of the given rectangle to blue color using JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+
+    <style>
+        .blue-rectangle{
+            height:100px;
+            width:200px;
+            border: solid 2px red;
+          }
+    </style>
+  </head>
+  <body>
+  <div class="blue-rectangle"></div>
+
+  <script>
+    const back = document.getElementsByClassName("blue-rectangle")
+
+        for(let i =0;i<back.length;i++){
+            back[i].style.backgroundColor= 'blue'
+        }
+  </script>
+  </body>
+</html>
