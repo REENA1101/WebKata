@@ -2,3 +2,42 @@
     using the container fluid bootstrap class Column1 Column2 Column3 and change the background
      color of each column to blue, brown, lavender Hint(Device breakpoint
      must be of md)-->
+
+
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+      .column1{
+          height:200px;
+         background-color:blue;
+      }
+      
+      .column2{
+          height:200px;
+         background-color:brown;
+      }
+      
+      .column3{
+          height:200px;
+         background-color:lavender;
+      }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 column1">Col1</div>
+        
+       <div class="col-md-4 column2">Col2</div>
+       <div class="col-md-4 column4">Col3</div>
+    </div>
+</div>
+</body>
+</html>
