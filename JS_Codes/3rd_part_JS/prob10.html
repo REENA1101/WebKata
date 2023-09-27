@@ -1,0 +1,26 @@
+<!-- prob10: Given a array, sort the array in Ascending order and print, using Javascript array=[40, 100, 1, 5, 25, 10]; Example(array=[5,4,3,2,1] sorted array 1,2,3,4,5 in p tag)-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+
+<p id="demo"></p>
+</body>
+
+<script>
+    const get = document.getElementById('demo')
+
+const arr = [40, 100, 1, 5, 25, 10]
+
+const sorte = arr.slice().sort((a,b)=>(a-b))
+
+get.textContent= sorte
+</script>
+ </html>

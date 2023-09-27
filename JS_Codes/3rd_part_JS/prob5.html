@@ -1,0 +1,28 @@
+<!-- prob5: Declare three variables a, b, and c and assign a with 10 and b with 20 and give addition of a and b to c. Display the result in paragraph tag as "C = 30".-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+     
+  </body>
+
+  <script>
+       let a = 10;
+        let b = 20;
+        let c= a+b;
+
+        const resultPara = document.createElement('p')
+        resultPara.textContent = `C = ${c}`
+
+
+        document.body.appendChild(resultPara)
+
+  </script>
+</html>
