@@ -1,0 +1,50 @@
+<!-- Prob4: Display a basic bootstrap page ,with 3 equal columns of below 
+    mentioned content using the container fluid bootstrap class 1.Column1 2.Column2 3.
+    \Column3 and change the background color of each column to blue, 
+    brown and lavender . using inline css Hint(break point must be of sm)-->
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+      .column1{
+      background-color:blue;
+  }
+  
+   .column2{
+      background-color:brown;
+  }
+  
+  .column3{
+       background-color:lavender;
+  }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+   
+      <div class="row">
+       <div class="col-sm-4 column1">
+            Content1
+       </div>
+       
+       <div class="col-sm-4 column2">
+           Content2
+       </div>
+
+       <div class="col-sm-1 column3">
+        Content3
+    </div>
+   </div>
+ 
+
+</div>
+</body>
+</html>

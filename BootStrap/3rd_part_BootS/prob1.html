@@ -1,0 +1,47 @@
+<!-- prob1: Display a basic bootstrap page ,with 2 unequal columns ratio (4:7) of below 
+    mentioned content using the container -fluid bootstrap class Column1 Column2 and also change
+     the background color of each column to light-blue, yellow, 
+    Hint(Device breakpoint must be of md).Change the font size of each column to 45px-->
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  div.row{
+  font-size:45px;
+  }
+  
+  .column1{
+      background-color:light-blue;
+  }
+  
+  .column2{
+       background-color:yellow;
+  }
+  
+  
+  </style>
+</head>
+<body>
+  
+<div class="container-fluid">
+   <div class="row">
+       <div class="col-md-4 column1">
+            Content1
+       </div>
+       
+       <div class="col-md-7 column2">
+           Content2
+       </div>
+   </div>
+
+</div>
+ 
+</body>
+</html>
