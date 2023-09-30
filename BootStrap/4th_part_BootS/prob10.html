@@ -1,0 +1,40 @@
+<!-- Prob40: Display a basic bootstrap page ,with 3 equal columns of below mentioned 
+    content using the container fluid bootstrap class Column1 Column2 Column3 and 
+    change the background color of each column to light-blue, yellow, lavender, 
+    Hint(Device breakpoint must be of sm)-->
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+    .Column1{
+        background-color:light-blue;
+    }
+    
+    .Column2{
+        background-color:yellow;
+    }
+    
+    .Column3{
+        background-color:lavender;
+    }
+</style>
+
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 Column1"m>Column1</div>
+    <div class="col-sm-3 Column2">Column2</div>
+    <div class="col-sm-3 Column3">Column3</div>
+  </div>
+</div>
+</body>
+</html>

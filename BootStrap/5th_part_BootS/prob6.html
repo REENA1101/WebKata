@@ -1,0 +1,45 @@
+<!-- Prob6: Display a basic bootstrap page ,with 3 unequal columns ratio (8:2:1) of below 
+    mentioned content using the container bootstrap class A.Column1 B.Column2 C.Column3 and 
+    also change the background 
+    color of each column to yellow, orange and green, Hint(Device breakpoint must be of sm).-->
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  div.row{
+  font-size:45px;
+  }
+  
+  .Column1{
+      background-color:yellow;
+  }
+  
+  .Column2{
+      background-color:orange;
+  }
+  
+  .Column3{
+      background-color:green;
+  }
+  </style>
+</head>
+<body>
+  
+<div class="container">
+  <div class="row">
+      <div class="col-sm-8 Column1">Column1</div>
+      <div class="col-sm-2 Column2">Column2</div>
+      <div class="col-sm-1 Column3">Column3</div>
+      
+  </div>
+
+  </div>
+</body>
+</html>
